@@ -14,8 +14,11 @@ To use the script, update the following parameters:
 - `$LogOutputDirectory` - Folder path to save the exported CSV files
 - `$EventTypesToExport` - Array of event log types to export 
 
-Then run the script in a PowerShell session. 
+Then run the script in a PowerShell session using the below line.
 
+```
+ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; .\export_log.ps1
+```
 By default, it will export the Application, Security, Setup, System, and ForwardedEvents logs.
 
 ## What it does
