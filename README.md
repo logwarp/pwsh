@@ -1,5 +1,5 @@
 
-# Windows Event Log Export Script
+# LogWarp Windows Event Log Export Script
 
 ## Overview
 
